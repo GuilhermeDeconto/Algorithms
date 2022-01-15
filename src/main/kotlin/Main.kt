@@ -1,4 +1,5 @@
 import helper.Numbers
+import math.Factorial
 import math.Fibonacci
 import sorting.imp.*
 import kotlin.system.measureTimeMillis
@@ -11,6 +12,8 @@ fun main(args: Array<String>) {
     val mergeSort = MergeSort()
     val insertionsort = InsertionSort()
     val quicksort = Quicksort()
+    val fibonacci = Fibonacci()
+    val factorial = Factorial()
 
     // BubbleSort
     val bubbleSortTime = measureTimeMillis {
@@ -60,9 +63,13 @@ fun main(args: Array<String>) {
     }
     println("${quickSortTime/1000}")
 
-    val fibonacci = Fibonacci()
-    val time7 = measureTimeMillis {
+    val fibonacciTime = measureTimeMillis {
         fibonacci.fib(10)
     }
-    println("${time7/1000}")
+    println("${fibonacciTime/1000}")
+
+    val factorialTime = measureTimeMillis {
+        factorial.fac(10)
+    }
+    println("${factorialTime/1000}")
 }
