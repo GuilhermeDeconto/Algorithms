@@ -14,8 +14,9 @@ fun main(args: Array<String>) {
     val bogoSort = BogoSort()
     val bozoSort = BozoSort()
     val mergeSort = MergeSort()
-    val insertionsort = InsertionSort()
+    val insertionSort = InsertionSort()
     val quicksort = Quicksort()
+    val selectionSort = SelectionSort()
     val fibonacci = Fibonacci()
     val factorial = Factorial()
 
@@ -23,7 +24,7 @@ fun main(args: Array<String>) {
     val bubbleSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         bubbleSort.bubbleSort(randomList)
-        println("Bubblesort: $randomList")
+        println("Bubble sort: $randomList")
     }
     println("${bubbleSortTime/1000}")
 
@@ -31,7 +32,7 @@ fun main(args: Array<String>) {
     val bogoSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         bogoSort.bogoSort(randomList)
-        println("Bogosort: $randomList")
+        println("Bogo sort: $randomList")
     }
     println("${bogoSortTime/1000}")
 
@@ -39,7 +40,7 @@ fun main(args: Array<String>) {
     val bozoSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         bozoSort.bozoSort(randomList)
-        println("Bozosort: $randomList")
+        println("Bozo sort: $randomList")
     }
     println("${bozoSortTime/1000}")
 
@@ -47,15 +48,15 @@ fun main(args: Array<String>) {
     val mergeSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         mergeSort.mergeSort(randomList)
-        println("Mergesort: $randomList")
+        println("Merge sort: $randomList")
     }
     println("${mergeSortTime/1000}")
 
     // InsertionSort
     val insertionSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
-        insertionsort.insertionSort(randomList)
-        println("Insertionsort: $randomList")
+        insertionSort.insertionSort(randomList)
+        println("Insertion sort: $randomList")
     }
     println("${insertionSortTime/1000}")
 
@@ -63,9 +64,17 @@ fun main(args: Array<String>) {
     val quickSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         quicksort.quicksort(randomList)
-        println("Quicksort: $randomList")
+        println("Quick sort: $randomList")
     }
     println("${quickSortTime/1000}")
+
+    // SelectionSort
+    val selectionSortTime = measureTimeMillis {
+        val randomList = Numbers.randomList(10, 100000)
+        selectionSort.selectionSort(randomList)
+        println("Selection sort: $randomList")
+    }
+    println("${selectionSortTime/1000}")
 
     val fibonacciTime = measureTimeMillis {
         fibonacci.fib(10)
