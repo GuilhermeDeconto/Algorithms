@@ -2,7 +2,7 @@ package sorting
 
 class BubbleSort : IBubbleSort {
 
-    override fun bubbleSort(array: ArrayList<Int>): ArrayList<Int> {
+    override fun bubbleSort(array: ArrayList<Int>) {
         var swapped = true
 
         while (swapped){
@@ -17,8 +17,6 @@ class BubbleSort : IBubbleSort {
 
             }
         }
-
-        return array
 
     }
 }
