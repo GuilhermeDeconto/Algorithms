@@ -22,4 +22,10 @@ object Arrays {
         return true
 
     }
+
+    fun swap(array: ArrayList<Int>, index1: Int, index2: Int) {
+        val temp = array[index1]
+        array[index1] = array[index2]
+        array[index2] = temp
+    }
 }
