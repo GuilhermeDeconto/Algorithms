@@ -4,6 +4,10 @@ import helper.Arrays
 import sorting.IBogoSort
 import kotlin.collections.ArrayList
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 class BogoSort : IBogoSort {
 
     /**

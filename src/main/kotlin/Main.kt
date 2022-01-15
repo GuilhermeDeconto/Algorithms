@@ -4,6 +4,10 @@ import math.Fibonacci
 import sorting.imp.*
 import kotlin.system.measureTimeMillis
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 fun main(args: Array<String>) {
 
     val bubbleSort = BubbleSort()

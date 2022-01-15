@@ -2,6 +2,10 @@ package math
 
 import java.math.BigInteger
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 class Factorial {
 
     private lateinit var facCache: HashMap<Int, BigInteger>

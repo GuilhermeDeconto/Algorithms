@@ -4,6 +4,10 @@ import helper.Arrays
 import sorting.IBozoSort
 import kotlin.random.Random.Default.nextInt
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 class BozoSort : IBozoSort {
 
     override fun bozoSort(array: ArrayList<Int>) {

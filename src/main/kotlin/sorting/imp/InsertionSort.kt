@@ -2,6 +2,10 @@ package sorting.imp
 
 import sorting.IInsertionSort
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 class InsertionSort : IInsertionSort {
 
     override fun insertionSort(array: ArrayList<Int>) {

@@ -1,5 +1,9 @@
 package helper
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 object Arrays {
 
     fun isSorted(array: ArrayList<Int>): Boolean {

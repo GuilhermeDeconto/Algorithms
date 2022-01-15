@@ -2,6 +2,10 @@ package sorting.imp
 
 import sorting.IMergeSort
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 class MergeSort : IMergeSort {
 
     override fun mergeSort(array: ArrayList<Int>) {

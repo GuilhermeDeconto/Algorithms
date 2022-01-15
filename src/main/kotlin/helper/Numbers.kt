@@ -6,6 +6,10 @@ import kotlin.collections.ArrayList
 import kotlin.math.abs
 import kotlin.random.Random.Default.nextInt
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 object Numbers {
 
     fun randomList(size: BigInteger): ArrayList<BigInteger> {

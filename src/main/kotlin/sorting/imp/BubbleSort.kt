@@ -2,6 +2,10 @@ package sorting.imp
 
 import sorting.IBubbleSort
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 class BubbleSort : IBubbleSort {
 
     override fun bubbleSort(array: ArrayList<Int>) {

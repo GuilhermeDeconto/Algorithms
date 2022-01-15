@@ -4,6 +4,10 @@ import helper.Arrays
 import sorting.IQuicksort
 import kotlin.random.Random.Default.nextInt
 
+/**
+ * @author : Guilherme Dall'Agnol Deconto
+ * @since : 1/15/22
+ **/
 class Quicksort : IQuicksort {
 
     override fun quicksort(array: ArrayList<Int>) {
