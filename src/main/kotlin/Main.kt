@@ -1,5 +1,6 @@
 import helper.Numbers
-import sorting.*
+import math.Fibonacci
+import sorting.imp.*
 import kotlin.system.measureTimeMillis
 
 fun main(args: Array<String>) {
@@ -12,50 +13,56 @@ fun main(args: Array<String>) {
     val quicksort = Quicksort()
 
     // BubbleSort
-    val time1 = measureTimeMillis {
+    val bubbleSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         bubbleSort.bubbleSort(randomList)
         println("Bubblesort: $randomList")
     }
-    println("${time1/1000}")
+    println("${bubbleSortTime/1000}")
 
     // BogoSort
-    val time2 = measureTimeMillis {
+    val bogoSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         bogoSort.bogoSort(randomList)
         println("Bogosort: $randomList")
     }
-    println("${time2/1000}")
+    println("${bogoSortTime/1000}")
 
     // BozoSort
-    val time3 = measureTimeMillis {
+    val bozoSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         bozoSort.bozoSort(randomList)
         println("Bozosort: $randomList")
     }
-    println("${time3/1000}")
+    println("${bozoSortTime/1000}")
 
     // MergeSort
-    val time4 = measureTimeMillis {
+    val mergeSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         mergeSort.mergeSort(randomList)
         println("Mergesort: $randomList")
     }
-    println("${time4/1000}")
+    println("${mergeSortTime/1000}")
 
     // InsertionSort
-    val time5 = measureTimeMillis {
+    val insertionSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         insertionsort.insertionSort(randomList)
         println("Insertionsort: $randomList")
     }
-    println("${time5/1000}")
+    println("${insertionSortTime/1000}")
 
     // Quicksort
-    val time6 = measureTimeMillis {
+    val quickSortTime = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
         quicksort.quicksort(randomList)
         println("Quicksort: $randomList")
     }
-    println("${time6/1000}")
+    println("${quickSortTime/1000}")
+
+    val fibonacci = Fibonacci()
+    val time7 = measureTimeMillis {
+        fibonacci.fib(10)
+    }
+    println("${time7/1000}")
 }
