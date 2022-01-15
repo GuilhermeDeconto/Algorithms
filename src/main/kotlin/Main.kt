@@ -1,5 +1,4 @@
 import helper.Numbers
-import math.Fibonacci
 import sorting.*
 import kotlin.system.measureTimeMillis
 
@@ -10,6 +9,7 @@ fun main(args: Array<String>) {
     val bozoSort = BozoSort()
     val mergeSort = MergeSort()
     val insertionsort = InsertionSort()
+    val quicksort = Quicksort()
 
     // BubbleSort
     val time1 = measureTimeMillis {
@@ -50,4 +50,12 @@ fun main(args: Array<String>) {
         println("Insertionsort: $randomList")
     }
     println("${time5/1000}")
+
+    // Quicksort
+    val time6 = measureTimeMillis {
+        val randomList = Numbers.randomList(10, 100000)
+        quicksort.quicksort(randomList)
+        println("Quicksort: $randomList")
+    }
+    println("${time6/1000}")
 }
