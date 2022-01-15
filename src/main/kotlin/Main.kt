@@ -1,6 +1,8 @@
 import helper.Numbers
 import math.Factorial
 import math.Fibonacci
+import search.BinarySearch
+import search.LinearSearch
 import sorting.imp.*
 import kotlin.system.measureTimeMillis
 
@@ -10,6 +12,7 @@ import kotlin.system.measureTimeMillis
  **/
 fun main(args: Array<String>) {
 
+    // Sorting
     val bubbleSort = BubbleSort()
     val bogoSort = BogoSort()
     val bozoSort = BozoSort()
@@ -17,8 +20,14 @@ fun main(args: Array<String>) {
     val insertionSort = InsertionSort()
     val quicksort = Quicksort()
     val selectionSort = SelectionSort()
+
+    // Math
     val fibonacci = Fibonacci()
     val factorial = Factorial()
+
+    // Search
+    val linear = LinearSearch()
+    val binarySearch = BinarySearch()
 
     // BubbleSort
     val bubbleSortTime = measureTimeMillis {
@@ -85,4 +94,18 @@ fun main(args: Array<String>) {
         factorial.fac(10)
     }
     println("${factorialTime/1000}")
+
+    val time9 = measureTimeMillis {
+        val target = 2
+        val result = linear.linearSearch(arrayListOf(1,2,3,4,5), target)
+        println("Linear Search: Index of target ($target) is $result")
+    }
+    println("${time9/1000}")
+
+    val time10 = measureTimeMillis {
+        val target = 5
+        val result = binarySearch.binarySearch(arrayListOf(1,5,3,6,9,2,4), target)
+        println("Binary Search: Index of target ($target) is $result")
+    }
+    println("${time10/1000}")
 }
