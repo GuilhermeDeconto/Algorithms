@@ -1,6 +1,7 @@
-package sorting
+package sorting.imp
 
 import helper.Arrays
+import sorting.IBogoSort
 import kotlin.collections.ArrayList
 
 class BogoSort : IBogoSort {

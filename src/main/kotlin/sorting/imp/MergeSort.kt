@@ -1,4 +1,6 @@
-package sorting
+package sorting.imp
+
+import sorting.IMergeSort
 
 class MergeSort : IMergeSort {
 

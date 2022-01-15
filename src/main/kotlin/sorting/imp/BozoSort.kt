@@ -1,6 +1,7 @@
-package sorting
+package sorting.imp
 
 import helper.Arrays
+import sorting.IBozoSort
 import kotlin.random.Random.Default.nextInt
 
 class BozoSort : IBozoSort {

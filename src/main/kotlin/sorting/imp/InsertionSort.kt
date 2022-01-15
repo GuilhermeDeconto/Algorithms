@@ -1,4 +1,6 @@
-package sorting
+package sorting.imp
+
+import sorting.IInsertionSort
 
 class InsertionSort : IInsertionSort {
 
