@@ -2,6 +2,7 @@ import helper.Numbers
 import sorting.BogoSort
 import sorting.BozoSort
 import sorting.BubbleSort
+import sorting.MergeSort
 import kotlin.system.measureTimeMillis
 
 fun main(args: Array<String>) {
@@ -9,6 +10,7 @@ fun main(args: Array<String>) {
     val bubbleSort = BubbleSort()
     val bogoSort = BogoSort()
     val bozoSort = BozoSort()
+    val mergeSort = MergeSort()
 
 //     BubbleSort
     val time1 = measureTimeMillis {
@@ -26,10 +28,18 @@ fun main(args: Array<String>) {
     }
     println("${time2/1000}")
 
+    // BozoSort
+    val time3 = measureTimeMillis {
+        val randomList = Numbers.randomList(10, 100000)
+        bozoSort.bozoSort(randomList)
+        println(randomList)
+    }
+    println("${time3/1000}")
+
     // MergeSort
     val time4 = measureTimeMillis {
         val randomList = Numbers.randomList(10, 100000)
-        bozoSort.bozoSort(randomList)
+        mergeSort.mergeSort(randomList)
         println(randomList)
     }
     println("${time4/1000}")
