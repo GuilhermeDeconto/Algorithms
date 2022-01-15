@@ -6,9 +6,9 @@ import kotlin.collections.ArrayList
 import kotlin.math.abs
 import kotlin.random.Random.Default.nextInt
 
-class Numbers : INumbers {
+object Numbers {
 
-    override fun randomList(size: BigInteger): ArrayList<BigInteger> {
+    fun randomList(size: BigInteger): ArrayList<BigInteger> {
         val random = SecureRandom()
         val randomList = ArrayList<BigInteger>()
         var aux: BigInteger = BigInteger.ZERO
@@ -21,7 +21,8 @@ class Numbers : INumbers {
 
         return randomList
     }
-    override fun randomList(size: Int, maxValue: Int): ArrayList<Int> {
+
+    fun randomList(size: Int, maxValue: Int): ArrayList<Int> {
         val randomNumbers = ArrayList<Int>()
 
         for (i in 0 until size) {
@@ -31,6 +32,5 @@ class Numbers : INumbers {
         return randomNumbers
 
     }
-
 
 }

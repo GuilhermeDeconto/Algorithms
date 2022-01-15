@@ -1,5 +1,6 @@
 package sorting
 
+import helper.Arrays
 import kotlin.collections.ArrayList
 
 class BogoSort : IBogoSort {
@@ -16,30 +17,8 @@ class BogoSort : IBogoSort {
      */
     override fun bogoSort(array: ArrayList<Int>) {
 
-        while (!isSorted(array)) {
+        while (!Arrays.isSorted(array)) {
             array.shuffle()
         }
     }
-
-    private fun isSorted(array: ArrayList<Int>): Boolean {
-        if (array.isEmpty()) {
-            return true
-        }
-
-        val size = array.size
-
-        if (size <= 1) {
-            return true
-        }
-
-        for (i in 0 until size - 1){
-            if (array[i] > array[i + 1]) {
-                return false
-            }
-        }
-
-        return true
-
-    }
-
 }
