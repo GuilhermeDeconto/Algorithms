@@ -1,14 +1,12 @@
-package sorting.imp
-
-import sorting.IMergeSort
+package sorting
 
 /**
  * @author : Guilherme Dall'Agnol Deconto
  * @since : 1/15/22
  **/
-class MergeSort : IMergeSort {
+class MergeSort {
 
-    override fun mergeSort(array: ArrayList<Int>) {
+    fun mergeSort(array: ArrayList<Int>) {
         val size = array.size
 
         if (size < 2) {

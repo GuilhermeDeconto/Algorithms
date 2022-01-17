@@ -1,14 +1,12 @@
-package sorting.imp
-
-import sorting.IInsertionSort
+package sorting
 
 /**
  * @author : Guilherme Dall'Agnol Deconto
  * @since : 1/15/22
  **/
-class InsertionSort : IInsertionSort {
+class InsertionSort {
 
-    override fun insertionSort(array: ArrayList<Int>) {
+    fun insertionSort(array: ArrayList<Int>) {
 
         for (i in 1 until array.size) {
             val currentValue = array[i]

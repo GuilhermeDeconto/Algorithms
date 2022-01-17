@@ -1,6 +1,6 @@
 package search
 
-import sorting.imp.Quicksort
+import sorting.Quicksort
 
 /**
  * @author : Guilherme Dall'Agnol Deconto

@@ -1,16 +1,15 @@
-package sorting.imp
+package sorting
 
 import helper.Arrays
-import sorting.IQuicksort
 import kotlin.random.Random.Default.nextInt
 
 /**
  * @author : Guilherme Dall'Agnol Deconto
  * @since : 1/15/22
  **/
-class Quicksort : IQuicksort {
+class Quicksort {
 
-    override fun quicksort(array: ArrayList<Int>) {
+    fun quicksort(array: ArrayList<Int>) {
         quicksort(array,0, array.size - 1)
     }
 

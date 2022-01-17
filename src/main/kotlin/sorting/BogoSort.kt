@@ -1,14 +1,13 @@
-package sorting.imp
+package sorting
 
 import helper.Arrays
-import sorting.IBogoSort
 import kotlin.collections.ArrayList
 
 /**
  * @author : Guilherme Dall'Agnol Deconto
  * @since : 1/15/22
  **/
-class BogoSort : IBogoSort {
+class BogoSort {
 
     /**
      * This class implements the BogoSort algorithm.
@@ -20,7 +19,7 @@ class BogoSort : IBogoSort {
      * The average case time complexity is O(n!), where n is the number of elements in the array.
      *
      */
-    override fun bogoSort(array: ArrayList<Int>) {
+    fun bogoSort(array: ArrayList<Int>) {
 
         while (!Arrays.isSorted(array)) {
             array.shuffle()

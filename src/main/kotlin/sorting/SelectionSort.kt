@@ -1,13 +1,12 @@
-package sorting.imp
+package sorting
 
 import helper.Arrays
-import sorting.ISelectionSort
 
 /**
  * @author : Guilherme Dall'Agnol Deconto
  * @since : 1/15/22
  **/
-class SelectionSort : ISelectionSort {
+class SelectionSort {
 
     /**
      * This class implements Selection sort algorithm.
@@ -26,7 +25,7 @@ class SelectionSort : ISelectionSort {
      *
      */
 
-    override fun selectionSort(array: ArrayList<Int>) {
+    fun selectionSort(array: ArrayList<Int>) {
 
         for (i in 0 until array.size) {
             // Assuming the minimum is the first

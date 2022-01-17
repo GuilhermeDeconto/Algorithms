@@ -3,7 +3,7 @@ import math.Factorial
 import math.Fibonacci
 import search.BinarySearch
 import search.LinearSearch
-import sorting.imp.*
+import sorting.*
 import kotlin.system.measureTimeMillis
 
 /**

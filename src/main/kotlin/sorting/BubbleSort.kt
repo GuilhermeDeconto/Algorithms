@@ -1,14 +1,12 @@
-package sorting.imp
-
-import sorting.IBubbleSort
+package sorting
 
 /**
  * @author : Guilherme Dall'Agnol Deconto
  * @since : 1/15/22
  **/
-class BubbleSort : IBubbleSort {
+class BubbleSort {
 
-    override fun bubbleSort(array: ArrayList<Int>) {
+    fun bubbleSort(array: ArrayList<Int>) {
         var swapped = true
 
         while (swapped){
