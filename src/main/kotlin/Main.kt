@@ -1,3 +1,4 @@
+import datastructure.Stack
 import helper.Numbers
 import math.Factorial
 import math.Fibonacci
@@ -108,4 +109,15 @@ fun main(args: Array<String>) {
         println("Binary Search: Index of target ($target) is $result")
     }
     println("${time10/1000}")
+
+    val stack = Stack(5)
+    stack.push(1)
+    stack.push(2)
+    stack.push(3)
+    stack.push(4)
+    stack.push(5)
+    stack.printStack()
+    stack.pop()
+    println(stack.peek())
+    println(stack.getSize())
 }
