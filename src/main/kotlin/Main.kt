@@ -36,7 +36,7 @@ fun main(args: Array<String>) {
         bubbleSort.bubbleSort(randomList)
         println("Bubble sort: $randomList")
     }
-    println("${bubbleSortTime/1000}")
+    println("${bubbleSortTime / 1000}")
 
     // BogoSort
     val bogoSortTime = measureTimeMillis {
@@ -44,7 +44,7 @@ fun main(args: Array<String>) {
         bogoSort.bogoSort(randomList)
         println("Bogo sort: $randomList")
     }
-    println("${bogoSortTime/1000}")
+    println("${bogoSortTime / 1000}")
 
     // BozoSort
     val bozoSortTime = measureTimeMillis {
@@ -52,7 +52,7 @@ fun main(args: Array<String>) {
         bozoSort.bozoSort(randomList)
         println("Bozo sort: $randomList")
     }
-    println("${bozoSortTime/1000}")
+    println("${bozoSortTime / 1000}")
 
     // MergeSort
     val mergeSortTime = measureTimeMillis {
@@ -60,7 +60,7 @@ fun main(args: Array<String>) {
         mergeSort.mergeSort(randomList)
         println("Merge sort: $randomList")
     }
-    println("${mergeSortTime/1000}")
+    println("${mergeSortTime / 1000}")
 
     // InsertionSort
     val insertionSortTime = measureTimeMillis {
@@ -68,7 +68,7 @@ fun main(args: Array<String>) {
         insertionSort.insertionSort(randomList)
         println("Insertion sort: $randomList")
     }
-    println("${insertionSortTime/1000}")
+    println("${insertionSortTime / 1000}")
 
     // Quicksort
     val quickSortTime = measureTimeMillis {
@@ -76,7 +76,7 @@ fun main(args: Array<String>) {
         quicksort.quicksort(randomList)
         println("Quick sort: $randomList")
     }
-    println("${quickSortTime/1000}")
+    println("${quickSortTime / 1000}")
 
     // SelectionSort
     val selectionSortTime = measureTimeMillis {
@@ -84,31 +84,31 @@ fun main(args: Array<String>) {
         selectionSort.selectionSort(randomList)
         println("Selection sort: $randomList")
     }
-    println("${selectionSortTime/1000}")
+    println("${selectionSortTime / 1000}")
 
     val fibonacciTime = measureTimeMillis {
-        fibonacci.fib(10)
+        println("Fibonacci of 10: ${fibonacci.fib(10)}")
     }
-    println("${fibonacciTime/1000}")
+    println("${fibonacciTime / 1000}")
 
     val factorialTime = measureTimeMillis {
-        factorial.fac(10)
+        println("Factorial of 10: ${factorial.fac(10)}")
     }
-    println("${factorialTime/1000}")
+    println("${factorialTime / 1000}")
 
     val time9 = measureTimeMillis {
         val target = 2
-        val result = linear.linearSearch(arrayListOf(1,2,3,4,5), target)
+        val result = linear.linearSearch(arrayListOf(1, 2, 3, 4, 5), target)
         println("Linear Search: Index of target ($target) is $result")
     }
-    println("${time9/1000}")
+    println("${time9 / 1000}")
 
     val time10 = measureTimeMillis {
         val target = 5
-        val result = binarySearch.binarySearch(arrayListOf(1,5,3,6,9,2,4), target)
+        val result = binarySearch.binarySearch(arrayListOf(1, 5, 3, 6, 9, 2, 4), target)
         println("Binary Search: Index of target ($target) is $result")
     }
-    println("${time10/1000}")
+    println("${time10 / 1000}")
 
     val stack = Stack(5)
     stack.push(1)

@@ -28,7 +28,6 @@ class Stack(size: Int) {
         if (isFull()) {
             throw IllegalArgumentException()
         }
-        println("Inserting: $value")
         // Push element to top of stack
         top++
         stack[top] = value
@@ -63,7 +62,7 @@ class Stack(size: Int) {
         return top >= size - 1
     }
 
-    private fun isEmpty() : Boolean {
+    fun isEmpty() : Boolean {
         return top < 0
     }
 }
