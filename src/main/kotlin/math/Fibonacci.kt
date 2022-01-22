@@ -8,7 +8,7 @@ import java.math.BigInteger
  **/
 class Fibonacci {
 
-    private lateinit var fibCache: HashMap<Int, BigInteger>
+    private var fibCache: HashMap<Int, BigInteger> = HashMap()
 
     /**
      * This class implements Fibonacci.
@@ -21,13 +21,11 @@ class Fibonacci {
      *
      */
 
-    fun fib(n: Int) {
-        fibCache = HashMap()
-
-        for (i in 0 until n + 1) {
-            print("${fibonacci(i)}  ")
+    fun fib(n: Int) : BigInteger {
+        if (n < 0) {
+            throw IllegalArgumentException("Negative number received")
         }
-        println()
+        return fibonacci(n)
     }
 
     private fun fibonacci(n: Int) : BigInteger {

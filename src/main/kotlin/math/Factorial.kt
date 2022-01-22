@@ -8,7 +8,7 @@ import java.math.BigInteger
  **/
 class Factorial {
 
-    private lateinit var facCache: HashMap<Int, BigInteger>
+    private var facCache: HashMap<Int, BigInteger> = HashMap()
 
     /**
      * This class implements Factorial.
@@ -24,14 +24,14 @@ class Factorial {
      *
      */
 
-    fun fac(n: Int) {
-        facCache = HashMap()
-        facCache[0] = BigInteger.ONE
-
-        println(factorial(n))
+    fun fac(n: Int) : BigInteger {
+        if (n < 0) {
+            throw IllegalArgumentException("Negative number received")
+        }
+        return factorial(n)
     }
 
-    fun factorial(n: Int) : BigInteger {
+    private fun factorial(n: Int) : BigInteger {
         return when {
             n == 0 -> {
                 BigInteger.ONE
